@@ -11,6 +11,9 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
+    "experiments": {
+      "baseUrl": "/hazbot-web"
+    },
     "plugins": [
       "expo-router",
       [
