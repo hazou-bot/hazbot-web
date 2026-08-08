@@ -1,0 +1,133 @@
+import { Showing } from '../types';
+
+/** Dates are relative to "now" so the Showings tab always has today + upcoming. */
+function inDays(days: number): string {
+  const d = new Date();
+  d.setDate(d.getDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+export const showings: Showing[] = [
+  {
+    id: 'show-1',
+    date: inDays(0),
+    time: '11:00 AM',
+    address: '145 Driggs Ave #1F',
+    client: 'Nick Antonelli',
+    phone: '+19295550102',
+    status: 'confirmed',
+    unitId: 'unit-10',
+  },
+  {
+    id: 'show-2',
+    date: inDays(0),
+    time: '5:30 PM',
+    address: '212 Bedford Ave #3F',
+    client: 'Maya Rosenberg',
+    phone: '+19175550164',
+    status: 'no_answer',
+    unitId: 'unit-1',
+  },
+  {
+    id: 'show-3',
+    date: inDays(0),
+    time: '6:45 PM',
+    address: '301 Graham Ave #4A',
+    client: 'Carolina Vasquez',
+    phone: '+16465550189',
+    status: 'confirmed',
+    unitId: 'unit-7',
+  },
+  {
+    id: 'show-4',
+    date: inDays(1),
+    time: '10:30 AM',
+    address: '1601 Ocean Ave #6C',
+    client: 'Tom Walsh',
+    phone: '+17185550113',
+    status: 'no_answer',
+    unitId: 'unit-12',
+  },
+  {
+    id: 'show-5',
+    date: inDays(2),
+    time: '5:00 PM',
+    address: '212 Bedford Ave #5A',
+    client: 'Jordan Kim',
+    phone: '+12015550177',
+    status: 'confirmed',
+    unitId: 'unit-2',
+  },
+  {
+    id: 'show-6',
+    date: inDays(4),
+    time: '12:00 PM',
+    address: '77 Clarkson Ave #PH2',
+    client: 'Priya Mehta',
+    phone: '+19175550136',
+    status: 'no_answer',
+    unitId: 'unit-14',
+  },
+  // Back-to-back viewings of the same unit — same date/time/address as
+  // show-8, so the Showings tab merges them into one multi-attendee slot.
+  {
+    id: 'show-7',
+    date: inDays(1),
+    time: '9:00 AM',
+    address: '58 North 6th St #4B',
+    client: 'Wei Chen',
+    phone: '+16465550221',
+    status: 'confirmed',
+    unitId: 'unit-16',
+  },
+  {
+    id: 'show-8',
+    date: inDays(1),
+    time: '9:00 AM',
+    address: '58 North 6th St #4B',
+    client: 'Fatima Al-Rashid',
+    phone: '+13475550290',
+    status: 'confirmed',
+    unitId: 'unit-16',
+  },
+  {
+    id: 'show-9',
+    date: inDays(1),
+    time: '4:30 PM',
+    address: '210 Nassau Ave #1C',
+    client: 'Ben Foster',
+    phone: '+12035550117',
+    status: 'confirmed',
+    unitId: 'unit-18',
+  },
+  {
+    id: 'show-10',
+    date: inDays(3),
+    time: '2:00 PM',
+    address: '301 Graham Ave #4A',
+    client: 'Marcus Bell',
+    phone: '+17185550244',
+    status: 'confirmed',
+    unitId: 'unit-7',
+  },
+  {
+    id: 'show-11',
+    date: inDays(5),
+    time: '1:00 PM',
+    address: '1601 Ocean Ave #2A',
+    client: 'Ola Adeyemi',
+    phone: '+447700900312',
+    status: 'no_answer',
+    unitId: 'unit-13',
+  },
+  {
+    id: 'show-12',
+    date: inDays(6),
+    time: '3:15 PM',
+    address: '145 Driggs Ave #1F',
+    client: 'Danny Ruiz',
+    phone: '+19295550388',
+    status: 'no_answer',
+    unitId: 'unit-10',
+  },
+];
