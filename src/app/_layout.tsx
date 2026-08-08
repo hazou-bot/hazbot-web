@@ -9,6 +9,7 @@ import { SessionProvider } from '../auth/session';
 import { ContactSheetProvider } from '../components/contactSheet';
 import { LockScreen } from '../components/lockScreen';
 import { ToastProvider } from '../components/toast';
+import PublicListingScreen from './listing/[token]';
 import {
   AccentProvider,
   HEADER_ICON_SIZE,
@@ -145,13 +146,31 @@ function PhoneFrame({ children }: { children: React.ReactNode }) {
   );
 }
 
+// A ?token= query param on the bare root path — see listing/[token].tsx's
+// doc comment for why this exists (GitHub Pages subpath hosting breaks
+// expo-router's own /listing/<token> path matching, and this sidesteps it
+// entirely by never needing path matching at all). Checked here, above
+// SessionProvider/AppLockProvider/the Stack, so a shared listing link never
+// touches auth/lock-screen state and always renders regardless of what
+// route the rest of the app would otherwise resolve `/` to.
+function PublicRouteGate({ children }: { children: React.ReactNode }) {
+  const token =
+    Platform.OS === 'web' && typeof window !== 'undefined'
+      ? new URLSearchParams(window.location.search).get('token')
+      : null;
+  if (token) return <PublicListingScreen token={token} />;
+  return <>{children}</>;
+}
+
 export default function RootLayout() {
   return (
     <ThemeModeProvider>
       <AccentProvider>
-        <AppLockProvider>
-          <RootLayoutInner />
-        </AppLockProvider>
+        <PublicRouteGate>
+          <AppLockProvider>
+            <RootLayoutInner />
+          </AppLockProvider>
+        </PublicRouteGate>
       </AccentProvider>
     </ThemeModeProvider>
   );

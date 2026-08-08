@@ -61,8 +61,17 @@ function unitLabel(u: PublicUnit): string {
 
 type LoadState = 'loading' | 'ready' | 'not-found' | 'error';
 
-export default function PublicListingScreen() {
-  const { token } = useLocalSearchParams<{ token: string }>();
+// Also reachable as /listing/<token> (this file's own route) when hosted at
+// a domain root, or via a ?token= query param on the app's bare root path
+// (see _layout.tsx's PublicRouteGate) when hosted under a GitHub-Pages-style
+// project subpath — expo-router's client-side path matching doesn't strip a
+// subpath prefix the way the static HTML export's own asset URLs do (tried
+// app.json's experiments.baseUrl, confirmed it has no effect on this SDK's
+// static web export), so a query param on the one path that's guaranteed to
+// resolve (the root) sidesteps the whole problem instead of fighting it.
+export default function PublicListingScreen({ token: tokenProp }: { token?: string } = {}) {
+  const params = useLocalSearchParams<{ token: string }>();
+  const token = tokenProp ?? params.token;
   const colors = useTheme();
   const insets = useSafeAreaInsets();
   const [state, setState] = useState<LoadState>('loading');
