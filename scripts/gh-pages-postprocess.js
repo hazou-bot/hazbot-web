@@ -78,3 +78,17 @@ const notFoundHtml =
 
 fs.writeFileSync(path.join(distDir, '404.html'), notFoundHtml);
 console.log('Wrote dist/404.html');
+
+// Privacy Policy / Terms of Service need a URL that resolves on the very
+// first request — App Store Connect and Apple's reviewers load these
+// directly, never through in-app navigation, so they can't depend on the
+// SPA 404-redirect trick above (which itself doesn't fully work for nested
+// paths here — see PublicListingScreen's doc comment in
+// src/app/listing/[token].tsx). Copied as plain, standalone HTML files
+// instead of expo-router pages, so GitHub Pages serves them as a direct
+// file match with zero client-side routing involved.
+const legalDir = path.join(__dirname, '..', 'legal');
+for (const name of ['privacy.html', 'terms.html']) {
+  fs.copyFileSync(path.join(legalDir, name), path.join(distDir, name));
+}
+console.log('Copied privacy.html and terms.html into dist/');
