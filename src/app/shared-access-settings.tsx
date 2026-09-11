@@ -215,7 +215,7 @@ export default function SharedAccessSettingsScreen() {
   };
 
   const inviteMessage = (code: string) =>
-    `${user?.name ?? 'Your teammate'} invited you to join their team on Hazbot, the real estate ` +
+    `${user?.name ?? 'Your teammate'} invited you to join their team on AgentEasy, the real estate ` +
     `lead cockpit. Download the app: ${DOWNLOAD_LINK}\nThen enter invite code ${code} when you ` +
     `sign up or log in to join automatically.`;
 
@@ -237,7 +237,7 @@ export default function SharedAccessSettingsScreen() {
 
   const sendInviteEmail = () => {
     if (!inviteCode) return;
-    const subject = encodeURIComponent('Join me on Hazbot');
+    const subject = encodeURIComponent('Join me on AgentEasy');
     const body = encodeURIComponent(inviteMessage(inviteCode.code));
     Linking.openURL(`mailto:?subject=${subject}&body=${body}`).catch(() =>
       toast('No mail app configured on this device', 'error')

@@ -36,7 +36,7 @@ export default function WelcomeScreen() {
         <View style={[styles.logoBadge, cardShadow, { backgroundColor: colors.teal }]}>
           <Ionicons name="home" size={36} color={colors.onTeal} />
         </View>
-        <Text style={[styles.title, { color: colors.text }]}>Hazbot</Text>
+        <Text style={[styles.title, { color: colors.text }]}>AgentEasy</Text>
         <Text style={[styles.subtitle, { color: colors.subtext }]}>
           The lead cockpit built for one agent at a time.{'\n'}Leads in, deals out.
         </Text>

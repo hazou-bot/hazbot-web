@@ -167,7 +167,7 @@ export default function SkippedLeadsScreen() {
               <Text style={[styles.modalBody, { color: colors.subtext }]}>
                 {confirmTarget.type === 'clearAll'
                   ? `All ${leads?.length ?? 0} skipped lead${leads?.length === 1 ? '' : 's'} will be restored to your active Leads list.`
-                  : `${confirmTarget.lead.name}'s lead and email will be permanently removed from Hazbot.`}
+                  : `${confirmTarget.lead.name}'s lead and email will be permanently removed from AgentEasy.`}
               </Text>
               <View style={styles.modalActions}>
                 <GhostButton

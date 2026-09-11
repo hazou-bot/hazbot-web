@@ -56,7 +56,7 @@ export function AppLockProvider({ children }: { children: React.ReactNode }) {
   };
 
   const unlock = async () => {
-    const ok = await authenticate('Unlock Hazbot');
+    const ok = await authenticate('Unlock AgentEasy');
     if (ok) setUnlocked(true);
     return ok;
   };

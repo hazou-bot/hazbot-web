@@ -343,7 +343,7 @@ export default function LeadDetailScreen() {
               <>
                 <Text style={[styles.modalTitle, { color: colors.text }]}>Delete this lead?</Text>
                 <Text style={[styles.modalBody, { color: colors.subtext }]}>
-                  {lead.name}'s lead and email will be permanently removed from Hazbot.
+                  {lead.name}'s lead and email will be permanently removed from AgentEasy.
                 </Text>
                 <View style={styles.modalActions}>
                   <GhostButton

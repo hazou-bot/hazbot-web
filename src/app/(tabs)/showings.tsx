@@ -682,7 +682,7 @@ export default function ShowingsScreen() {
   // detail Modal there; this button sits in the inline accordion row, so a
   // direct open keeps it a one-tap action instead of a second UI to build.
   // Defaults to Apple Maps for anything that isn't specifically Android
-  // (most of Hazbot's agents are on iPhone) rather than only using Apple
+  // (most of AgentEasy's agents are on iPhone) rather than only using Apple
   // Maps when `Platform.OS` is confirmed 'ios' — the web preview reports
   // 'web', which would otherwise silently fall back to Google Maps.
   const openDirections = (s: Showing) => {

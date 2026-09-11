@@ -131,7 +131,7 @@ export default function DriveSettingsScreen() {
           <>
             <Text style={[styles.connectTitle, { color: colors.text }]}>Connect Google Drive</Text>
             <Text style={[styles.connectBody, { color: colors.subtext }]}>
-              Link a Google Sheet from Drive (or Google One storage) and Hazbot reads your unit
+              Link a Google Sheet from Drive (or Google One storage) and AgentEasy reads your unit
               inventory workbook directly — no manual re-entry when rows change.
             </Text>
             <Pressable
@@ -167,7 +167,7 @@ export default function DriveSettingsScreen() {
               )}
             </Pressable>
             <Text style={[styles.hint, { color: colors.faint }]}>
-              You'll pick the exact spreadsheet on Google's own file picker — Hazbot only gets
+              You'll pick the exact spreadsheet on Google's own file picker — AgentEasy only gets
               read access to that one file.
             </Text>
           </>

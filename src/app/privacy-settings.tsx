@@ -24,7 +24,7 @@ export default function PrivacySettingsScreen() {
   const confirmDeleteAccount = () => {
     Alert.alert(
       'Delete your account?',
-      'This permanently deletes your Hazbot account, leads, contacts, and settings. This cannot be undone.',
+      'This permanently deletes your AgentEasy account, leads, contacts, and settings. This cannot be undone.',
       [
         { text: 'Cancel', style: 'cancel' },
         {

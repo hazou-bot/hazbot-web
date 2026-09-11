@@ -3,7 +3,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useColorScheme } from 'react-native';
 
 /**
- * Hazbot design system.
+ * AgentEasy design system.
  * Warm-neutral background, deep-teal + burnt-amber accents.
  */
 export const palette = {

@@ -231,7 +231,7 @@ export default function SubscriptionScreen() {
               <Text style={{ fontWeight: '700', color: colors.text }}>
                 {formatDate(nextChargeDate)}
               </Text>
-              , then Hazbot will stop working until you resubscribe.
+              , then AgentEasy will stop working until you resubscribe.
             </Text>
             <View style={styles.modalActions}>
               <GhostButton

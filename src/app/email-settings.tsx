@@ -131,7 +131,7 @@ export default function EmailSettingsScreen() {
           <>
             <Text style={[styles.connectTitle, { color: colors.text }]}>Connect your email</Text>
             <Text style={[styles.connectBody, { color: colors.subtext }]}>
-              Hazbot scans your inbox for StreetEasy and Zillow lead emails and turns them into
+              AgentEasy scans your inbox for StreetEasy and Zillow lead emails and turns them into
               lead cards — no forwarding rules, no copy-paste. Read access is used only for lead
               detection.
             </Text>

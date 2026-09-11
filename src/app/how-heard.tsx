@@ -57,7 +57,7 @@ export default function HowHeardScreen() {
         <View style={[styles.badge, cardShadow, { backgroundColor: colors.teal }]}>
           <Ionicons name="megaphone" size={26} color={colors.onTeal} />
         </View>
-        <Text style={[styles.title, { color: colors.text }]}>How’d you hear about Hazbot?</Text>
+        <Text style={[styles.title, { color: colors.text }]}>How’d you hear about AgentEasy?</Text>
         <Text style={[styles.subtitle, { color: colors.subtext }]}>
           Helps us understand what’s working so we can reach more agents like you.
         </Text>

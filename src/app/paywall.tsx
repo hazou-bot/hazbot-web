@@ -50,7 +50,7 @@ export default function PaywallScreen() {
       <View style={[styles.badge, cardShadow, { backgroundColor: colors.teal }]}>
         <Ionicons name="sparkles" size={28} color={colors.onTeal} />
       </View>
-      <Text style={[styles.title, { color: colors.text }]}>Unlock Hazbot</Text>
+      <Text style={[styles.title, { color: colors.text }]}>Unlock AgentEasy</Text>
       <Text style={[styles.subtitle, { color: colors.subtext }]}>
         Start your {TRIAL_DAYS}-day free trial — cancel anytime, no charge until the trial ends.
       </Text>

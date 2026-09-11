@@ -73,7 +73,7 @@ export default function SecuritySettingsScreen() {
             <Text style={[styles.switchLabel, { color: colors.text }]}>{biometricLabel} lock</Text>
             <Text style={[styles.switchHint, { color: colors.faint }]}>
               {biometricAvailable
-                ? `Require ${biometricLabel} to open Hazbot`
+                ? `Require ${biometricLabel} to open AgentEasy`
                 : `${biometricLabel} isn’t set up on this device`}
             </Text>
           </View>

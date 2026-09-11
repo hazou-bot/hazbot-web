@@ -206,7 +206,7 @@ export default function FavoriteContactsScreen() {
           >
             <Text style={[styles.modalTitle, { color: colors.text }]}>Remove this contact?</Text>
             <Text style={[styles.confirmBody, { color: colors.subtext }]}>
-              {removeTarget?.name} will be removed from your Contacts list in Hazbot. This won’t
+              {removeTarget?.name} will be removed from your Contacts list in AgentEasy. This won’t
               affect your phone’s Contacts app.
             </Text>
             <View style={[styles.searchActions, { marginTop: 16 }]}>

@@ -83,7 +83,7 @@ export default function LoginScreen() {
           <View style={[styles.logoBadge, cardShadow, { backgroundColor: colors.teal }]}>
             <Ionicons name="home" size={30} color={colors.onTeal} />
           </View>
-          <Text style={[styles.title, { color: colors.text }]}>Hazbot</Text>
+          <Text style={[styles.title, { color: colors.text }]}>AgentEasy</Text>
           <Text style={[styles.subtitle, { color: colors.subtext }]}>
             Your lead cockpit. Leads in, deals out.
           </Text>
@@ -168,7 +168,7 @@ export default function LoginScreen() {
         </View>
 
         <View style={styles.footer}>
-          <Text style={{ color: colors.subtext, fontSize: 14 }}>New to Hazbot? </Text>
+          <Text style={{ color: colors.subtext, fontSize: 14 }}>New to AgentEasy? </Text>
           <Link href="/signup">
             <Text style={{ color: colors.teal, fontSize: 14, fontWeight: '600' }}>
               Create an account

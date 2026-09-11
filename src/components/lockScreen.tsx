@@ -22,7 +22,7 @@ export function LockScreen() {
       <View style={[styles.badge, cardShadow, { backgroundColor: colors.teal }]}>
         <Ionicons name="lock-closed" size={30} color={colors.onTeal} />
       </View>
-      <Text style={[styles.title, { color: colors.text }]}>Hazbot is locked</Text>
+      <Text style={[styles.title, { color: colors.text }]}>AgentEasy is locked</Text>
       <Text style={[styles.subtitle, { color: colors.subtext }]}>
         Unlock with Face ID to continue
       </Text>

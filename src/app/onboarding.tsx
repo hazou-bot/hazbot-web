@@ -12,7 +12,7 @@ const STEPS: { number: string; title: string; description: string }[] = [
   {
     number: '1',
     title: 'Connect your inbox',
-    description: 'Hazbot watches your email for new inquiries from StreetEasy and Zillow.',
+    description: 'AgentEasy watches your email for new inquiries from StreetEasy and Zillow.',
   },
   {
     number: '2',

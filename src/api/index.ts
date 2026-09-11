@@ -1,5 +1,5 @@
 /**
- * Hazbot API layer.
+ * AgentEasy API layer.
  *
  * Every screen reads data ONLY through this module. Right now it serves
  * local mock data with a small artificial delay; to hook up a real
@@ -477,7 +477,7 @@ export async function addManualContact(input: {
   return contact;
 }
 
-// TODO: replace with real API — DELETE /contacts/:id (hides from Hazbot,
+// TODO: replace with real API — DELETE /contacts/:id (hides from AgentEasy,
 // does not touch the phone's own Contacts app)
 export async function removeContact(id: string): Promise<void> {
   const removed = await getRemovedContactIds();
