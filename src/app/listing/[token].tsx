@@ -200,7 +200,7 @@ export default function PublicListingScreen({ token: tokenProp }: { token?: stri
         <View style={[styles.footerBadge, { backgroundColor: colors.tealSoft }]}>
           <Ionicons name="home" size={13} color={colors.teal} />
         </View>
-        <Text style={[styles.footerLabel, { color: colors.faint }]}>Hazbot</Text>
+        <Text style={[styles.footerLabel, { color: colors.faint }]}>AgentEasy</Text>
       </View>
     </ScrollView>
   );

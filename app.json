@@ -1,18 +1,15 @@
 {
   "expo": {
-    "name": "Hazbot",
-    "slug": "hazbot-web",
+    "name": "AgentEasy",
+    "slug": "agenteasy-web",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "hazbot",
+    "scheme": "agenteasy",
     "userInterfaceStyle": "automatic",
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png"
-    },
-    "experiments": {
-      "baseUrl": "/hazbot-web"
     },
     "plugins": [
       "expo-router",
@@ -26,6 +23,7 @@
       ]
     ],
     "experiments": {
+      "baseUrl": "/agenteasy-web",
       "typedRoutes": true,
       "reactCompiler": true
     }

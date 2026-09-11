@@ -85,7 +85,7 @@ function PhoneFrame({ children }: { children: React.ReactNode }) {
               color: scheme === 'dark' ? '#F0F0EE' : '#0D1714',
             }}
           >
-            Hazbot
+            AgentEasy
           </Text>
           <Text
             style={{

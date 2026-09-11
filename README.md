@@ -1,6 +1,6 @@
-# Hazbot Web — lead cockpit (website)
+# AgentEasy Web — lead cockpit (website)
 
-The Hazbot app as a **website**, ported from the iOS project (`hazbot-mobile`,
+The AgentEasy app as a **website**, ported from the iOS project (`hazbot-mobile`,
 which remains untouched — this is a separate fork). Same codebase idea:
 **Expo (React Native + TypeScript + Expo Router)** rendered in the browser via
 `react-native-web`. Every screen, feature, and design token from the iOS app

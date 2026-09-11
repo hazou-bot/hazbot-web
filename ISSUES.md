@@ -1,6 +1,6 @@
-# Hazbot Web — Known Compromises & Limitations
+# AgentEasy Web — Known Compromises & Limitations
 
-This project is a web port of the Hazbot iOS app (`hazbot-mobile`, which
+This project is a web port of the AgentEasy iOS app (`hazbot-mobile`, which
 remains untouched). It's the same React Native + Expo codebase running in
 the browser via `react-native-web`, forked so web-specific changes never
 touch the iOS project. Every feature was carried over; the items below are

@@ -22,7 +22,7 @@ const indexPath = path.join(distDir, 'index.html');
 // EXPO_BASE_URL env var were both tried and neither actually changes this
 // output (confirmed by inspecting the generated files) — so this rewrites
 // every occurrence directly, post-export, across every .html and .js file.
-const BASE_PATH = '/hazbot-web';
+const BASE_PATH = '/agenteasy-web';
 
 function walk(dir, exts, files = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
